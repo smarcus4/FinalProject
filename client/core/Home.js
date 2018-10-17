@@ -53,7 +53,7 @@ class Home extends Component {
         {this.state.defaultPage &&
           <Grid container spacing={24}>
             <Grid item xs={12}>
-              <Card className={classes.card}>
+              {/* <Card className={classes.card}> */}
                 <Typography type="headline" component="h2" className={classes.title}>
                   Home Page
                 </Typography>
@@ -63,7 +63,7 @@ class Home extends Component {
                     Welcome to the MERN Social home page. 
                   </Typography>
                 </CardContent>
-              </Card>
+              {/* </Card> */}
             </Grid>
           </Grid>
         }

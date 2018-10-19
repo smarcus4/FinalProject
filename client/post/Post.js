@@ -35,7 +35,7 @@ const styles = theme => ({
   },
   photo: {
     textAlign: 'center',
-    backgroundColor: '#f2f5f4',
+    backgroundColor: '#fff',
     padding:theme.spacing.unit
   },
   media: {

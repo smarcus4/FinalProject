@@ -52,6 +52,16 @@ const list = (req, res) => {
   }).select('name email updated created')
 }
 
+
+
+// const questions= (req, res) => {
+//   User
+//   .findAll({})
+//   .then(dbModel => res.json(dbModel))
+//   .catch(err => res.status(500).json(err));
+
+// },
+
 const update = (req, res, next) => {
   let form = new formidable.IncomingForm()
   form.keepExtensions = true

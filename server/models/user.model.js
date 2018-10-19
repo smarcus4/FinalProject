@@ -27,6 +27,24 @@ const UserSchema = new mongoose.Schema({
     type: String,
     trim: true
   },
+  // scores: [
+  //  {
+  //    type: String,
+  //    qusetionOne: "Do you Prefer Windows or Mac?"
+  //  },
+  //  {
+  //     type: String,
+  //     qusetionTwo: "Test question number 2"
+  //   },
+  //   {
+  //     type: String,
+  //     qusetionThree: "question number 3"
+  //   }
+  // ],
+  // finalScore:{
+  //   type: Number
+  // },
+ 
   photo: {
     data: Buffer,
     contentType: String

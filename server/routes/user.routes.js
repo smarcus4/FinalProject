@@ -13,6 +13,8 @@ router.route('/api/users/photo/:userId')
 router.route('/api/users/defaultphoto')
   .get(userCtrl.defaultPhoto)
 
+  
+
 router.route('/api/users/follow')
     .put(authCtrl.requireSignin, userCtrl.addFollowing, userCtrl.addFollower)
 router.route('/api/users/unfollow')

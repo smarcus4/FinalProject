@@ -49,6 +49,12 @@ const UserSchema = new mongoose.Schema({
     data: Buffer,
     contentType: String
   },
+  // scores: {
+  //   type: [Number],
+  //   required: true
+
+  // },
+
   following: [{type: mongoose.Schema.ObjectId, ref: 'User'}],
   followers: [{type: mongoose.Schema.ObjectId, ref: 'User'}]
 })

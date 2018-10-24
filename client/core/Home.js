@@ -9,6 +9,9 @@ import Grid from 'material-ui/Grid'
 import auth from './../auth/auth-helper'
 import FindPeople from './../user/FindPeople'
 import Newsfeed from './../post/Newsfeed'
+import Chat from "../user/Chat";
+
+// require("../client");
 
 const styles = theme => ({
   root: {
@@ -67,16 +70,43 @@ class Home extends Component {
             </Grid>
           </Grid>
         }
+
         {!this.state.defaultPage &&
           <Grid container spacing={24}>
             <Grid item xs={8} sm={7}>
               <Newsfeed/>
+              
             </Grid>
             <Grid item xs={6} sm={5}>
               <FindPeople/>
             </Grid>
+            <Chat/>
           </Grid>
         }
+
+        {/* <div className="container">
+            <div className="row">
+                <div className="col-md-6 offset-md-3 col-sm-12">
+                    <h1 className="text-center">
+                        GeekChat 
+                        <button id="clear" className="btn btn-danger">Clear</button>
+                    </h1>
+                    <div id="status"></div>
+                    <div id="chat">
+                        <input type="text" id="username" className="form-control" placeholder="Enter name..."/>
+                        <br/>
+                        <div className="card">
+                            <div id="messages" className="card-block">
+    
+                            </div>
+                        </div>
+                        <br/>
+                        <textarea id="textarea" className="form-control" placeholder="Enter message..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div> */}
+         
       </div>
     )
   }

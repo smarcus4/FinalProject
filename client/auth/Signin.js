@@ -11,8 +11,9 @@ import {Redirect} from 'react-router-dom'
 import {signin} from './api-auth.js'
 
 const styles = theme => ({
+
   card: {
-    maxWidth: 600,
+    maxWidth: 800,
     margin: 'auto',
     textAlign: 'center',
     marginTop: theme.spacing.unit * 5,
@@ -28,7 +29,7 @@ const styles = theme => ({
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
-    width: 300
+    width: 400
   },
   submit: {
     margin: 'auto',
@@ -99,6 +100,7 @@ class Signin extends Component {
     )
   }
 }
+
 
 Signin.propTypes = {
   classes: PropTypes.object.isRequired

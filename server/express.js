@@ -51,24 +51,24 @@ app.use('/', postRoutes)
 app.get('*', (req, res) => {
    const sheetsRegistry = new SheetsRegistry()
    const theme = createMuiTheme({
-     palette: {
-       primary: {
-       light: '#52c7b8',
-       main: '#009688',
-       dark: '#00675b',
-       contrastText: '#fff',
-     },
-     secondary: {
-       light: '#ffd95b',
-       main: '#ffa726',
-       dark: '#c77800',
-       contrastText: '#000',
-     },
-       openTitle: teal['700'],
-       protectedTitle: orange['700'],
-       type: 'light'
-     }
-   })
+    palette: {
+      primary: {
+      light: '#6ec6ff',
+      main: '#2196f3',
+      dark: '#1769aa',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#a255ff',
+      main: '#651fff',
+      dark: '#0100ca',
+      contrastText: '#fff',
+    },
+      openTitle: teal['700'],
+      protectedTitle: orange['700'],
+      type: 'light'
+    }
+  })
    const generateClassName = createGenerateClassName()
    const context = {}
    const markup = ReactDOMServer.renderToString(

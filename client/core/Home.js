@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {withStyles} from 'material-ui/styles'
 import Card, {CardContent, CardMedia} from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
-import seashellImg from './../assets/images/seashell.jpg'
+import Background from './../assets/images/background.jpg'
 import {Link} from 'react-router-dom'
 import Grid from 'material-ui/Grid'
 import auth from './../auth/auth-helper'
@@ -19,7 +19,7 @@ const styles = theme => ({
     margin: 30,
   },
   card: {
-    maxWidth: 600,
+    maxWidth: 500,
     margin: 'auto',
     marginTop: theme.spacing.unit * 5
   },
@@ -28,7 +28,7 @@ const styles = theme => ({
     color: theme.palette.text.secondary
   },
   media: {
-    minHeight: 330
+    minHeight: 600
   }
 })
 
@@ -56,17 +56,17 @@ class Home extends Component {
         {this.state.defaultPage &&
           <Grid container spacing={24}>
             <Grid item xs={12}>
-              <Card className={classes.card}>
+              {/* <Card className={classes.card}> */}
                 <Typography type="headline" component="h2" className={classes.title}>
-                  Home Page
+
                 </Typography>
-                <CardMedia className={classes.media} image={seashellImg} title="Unicorn Shells"/>
+                <CardMedia className={classes.media} image={Background} title="Love Hearts"/>
                 <CardContent>
-                  <Typography type="body1" component="p">
-                    Welcome to the MERN Social home page. 
+                  <Typography type="body1" component="p"> 
                   </Typography>
                 </CardContent>
-              </Card>
+              {/* </Card> */}
+              
             </Grid>
           </Grid>
         }

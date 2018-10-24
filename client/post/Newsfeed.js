@@ -21,7 +21,7 @@ const styles = theme => ({
     fontSize: '1em'
   },
   media: {
-    minHeight: 330
+    minHeight: 530
   }
 })
 class Newsfeed extends Component {
@@ -61,7 +61,7 @@ class Newsfeed extends Component {
     return (
       <Card className={classes.card}>
         <Typography type="title" className={classes.title}>
-          Newsfeed
+          geekFeed
         </Typography>
         <Divider/>
         <NewPost addUpdate={this.addPost}/>

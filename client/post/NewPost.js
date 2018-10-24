@@ -21,17 +21,17 @@ const styles = theme => ({
     maxWidth:600,
     margin: 'auto',
     marginBottom: theme.spacing.unit*3,
-    backgroundColor: 'rgba(65, 150, 136, 0.09)',
+    backgroundColor: 'rgba(142,190,244, .6)',
     boxShadow: 'none'
   },
   cardContent: {
-    backgroundColor: 'white',
-    paddingTop: 0,
-    paddingBottom: 0
+    backgroundColor: 'rgba(242,242,242)',
+    paddingTop: 10,
+    paddingBottom: 10
   },
   cardHeader: {
-    paddingTop: 8,
-    paddingBottom: 8
+    paddingTop: 10,
+    paddingBottom: 10
   },
   photoButton: {
     height: 30,

@@ -56,10 +56,13 @@
     "mongodb": "^3.1.8",
     "mongoose": "5.0.16",
     "react": "16.3.2",
-    "react-dom": "16.3.2",
+    "react-dom": "^16.3.2",
     "react-hot-loader": "4.1.2",
     "react-router": "4.2.0",
     "react-router-dom": "4.2.2",
+
+    "react-swipey": "^0.1.0"
+
     "socket.io": "^2.1.1"
   }
 }

@@ -67,7 +67,7 @@ class FindPeople extends Component {
       } else {
         let toFollow = this.state.users
         toFollow.splice(index, 1)
-        this.setState({users: toFollow, open: true, followMessage: `Following ${user.name}!`})
+        this.setState({users: toFollow, open: true, followMessage: `You're geeking over ${user.name}!`})
       }
     })
   }
@@ -79,7 +79,7 @@ class FindPeople extends Component {
     return (<div>
       <Paper className={classes.root} elevation={4}>
         <Typography type="title" className={classes.title}>
-          Who to follow
+          Who to Geek Over
         </Typography>
         <List>
           {this.state.users.map((item, i) => {
@@ -96,7 +96,7 @@ class FindPeople extends Component {
                       </IconButton>
                     </Link>
                     <Button aria-label="Follow" variant="raised" color="primary" onClick={this.clickFollow.bind(this, item, i)}>
-                      Follow
+                      Geek
                     </Button>
                   </ListItemSecondaryAction>
                 </ListItem>

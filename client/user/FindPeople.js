@@ -67,7 +67,7 @@ class FindPeople extends Component {
       } else {
         let toFollow = this.state.users
         toFollow.splice(index, 1)
-        this.setState({users: toFollow, open: true, followMessage: `Following ${user.name}!`})
+        this.setState({users: toFollow, open: true, followMessage: `You're geeking over ${user.name}!`})
       }
     })
   }

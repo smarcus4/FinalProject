@@ -6,6 +6,7 @@ export default ({markup, css}) => {
           <title>geekMatch</title>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
           <link rel="icon" type="image/png" sizes="32x32" href="./client/assets/images/heartfav.png">
 
@@ -18,7 +19,7 @@ export default ({markup, css}) => {
                 height:300px;
               }
               #chat{
-                width: 75%;
+                width: 100%;
                 margin: auto;
               }
           </style>

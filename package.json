@@ -1,9 +1,9 @@
 {
-  "name": "mern-social",
+  "name": "geekMatch",
   "version": "1.0.0",
-  "description": "A MERN stack based social media application",
-  "author": "Shama Hoque",
-  "license": "MIT",
+  "description": "A Social Dating App For Geeks",
+  "author": "",
+  "license": "",
   "keywords": [
     "react",
     "express",
@@ -13,9 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shamahoque/mern-social.git"
+    "url": ""
   },
-  "homepage": "https://github.com/shamahoque/mern-social",
+  "homepage": "",
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
@@ -60,9 +60,8 @@
     "react-hot-loader": "4.1.2",
     "react-router": "4.2.0",
     "react-router-dom": "4.2.2",
-
-    "react-swipey": "^0.1.0"
-
-    "socket.io": "^2.1.1"
+    "react-swipey": "^0.1.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
   }
 }

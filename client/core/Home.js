@@ -19,13 +19,21 @@ const styles = theme => ({
     margin: 30,
   },
   card: {
-    maxWidth: 500,
+    minWidth: 400,
+    maxHeight: 600,
     margin: 'auto',
-    marginTop: theme.spacing.unit * 5
+    paddingTop: 0,
+    paddingBottom: theme.spacing.unit*3
+    // marginTop: theme.spacing.unit * 5
   },
   title: {
     padding:`${theme.spacing.unit * 3}px ${theme.spacing.unit * 2.5}px ${theme.spacing.unit * 2}px`,
     color: theme.palette.text.secondary
+  },
+  chatTitle: {
+    padding:`${theme.spacing.unit * 3}px ${theme.spacing.unit * 2.5}px ${theme.spacing.unit * 2}px`,
+    color: theme.palette.openTitle,
+    fontSize: '1em'
   },
   media: {
     minHeight: 600
@@ -73,15 +81,27 @@ class Home extends Component {
 
         {!this.state.defaultPage &&
           <Grid container spacing={24}>
-            <Grid item xs={8} sm={7}>
+            <Grid item xs>
               <Newsfeed/>
               
             </Grid>
-            <Grid item xs={6} sm={5}>
+            
+            <Grid item xs>
               <FindPeople/>
+              
             </Grid>
-            <Chat/>
+            <Grid item xs>
+            <Card className={classes.card}>
+              <Typography type="title" className={classes.chatTitle}>
+                geekChat
+              </Typography>
+              <Chat/>
+            </Card>
+            </Grid>
+            
+            
           </Grid>
+          
         }
 
         {/* <div className="container">

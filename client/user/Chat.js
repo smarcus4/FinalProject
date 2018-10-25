@@ -1,5 +1,8 @@
 import React from "react";
 import io from "socket.io-client";
+import Card, {CardActions, CardContent} from 'material-ui/Card'
+import Button from 'material-ui/Button'
+import TextField from 'material-ui/TextField'
 
 class Chat extends React.Component{
     constructor(props){
@@ -36,12 +39,9 @@ class Chat extends React.Component{
     render(){
         const {classes} = this.props
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-4">
-                        <div className="card" id="chat">
-                            <div className="card-body">
-                                <div className="card-title">Global Chat</div>
+            <div className="container" id="chat">
+                
+                                
                                 <hr/>
                                 <div className="messages">
                                     {this.state.messages.map(message => {
@@ -51,7 +51,8 @@ class Chat extends React.Component{
                                     })}
                                 </div>
 
-                            </div>
+                            <br/>
+                            <br/>
                             <div className="card-footer">
                                 <input type="text" placeholder="Username" value={this.state.username} onChange={ev => this.setState({username: ev.target.value})} className="form-control"/>
                                 <br/>
@@ -59,10 +60,8 @@ class Chat extends React.Component{
                                 <br/>
                                 <button onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+                        
         );
     }
 }
